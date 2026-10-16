@@ -4,6 +4,10 @@
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
 [![React](https://img.shields.io/badge/React-19-blue.svg)](https://react.dev)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green.svg)](https://fastapi.tiangolo.com)
+[![Deployment: Vercel](https://img.shields.io/badge/Deployment-Vercel-black.svg)](https://phishlens-three.vercel.app)
+
+**🌐 Live Demo:** [https://phishlens-three.vercel.app](https://phishlens-three.vercel.app)  
+**📂 GitHub Repository:** [https://github.com/GorillaBrain/PhishLens](https://github.com/GorillaBrain/PhishLens)
 
 PhishLens is an educational cybersecurity tool that analyzes URLs for potential phishing and security risks using transparent, rule-based heuristic analysis.
 
