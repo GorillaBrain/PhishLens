@@ -15,7 +15,10 @@ from typing import Optional
 
 import httpx
 
-from .models import VirusTotalResult
+try:
+    from .models import VirusTotalResult
+except ImportError:
+    from models import VirusTotalResult
 
 logger = logging.getLogger(__name__)
 

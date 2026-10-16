@@ -17,7 +17,10 @@ import string
 from typing import Optional
 from urllib.parse import unquote, urlparse
 
-from .models import Finding, HeuristicResult, URLComponents
+try:
+    from .models import Finding, HeuristicResult, URLComponents
+except ImportError:
+    from models import Finding, HeuristicResult, URLComponents
 
 # ---------------------------------------------------------------------------
 # Constants

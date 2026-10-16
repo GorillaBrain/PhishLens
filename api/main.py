@@ -18,12 +18,16 @@ from typing import Any
 
 from fastapi import FastAPI, HTTPException, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
-
-from . import config
-from .analyzer import analyze_url
-from .models import ErrorResponse, ScanRequest, ScanResponse, VirusTotalResult
-from .virustotal import check_url as vt_check_url
+try:
+    from . import config
+    from .analyzer import analyze_url
+    from .models import ErrorResponse, ScanRequest, ScanResponse, VirusTotalResult
+    from .virustotal import check_url as vt_check_url
+except ImportError:
+    import config
+    from analyzer import analyze_url
+    from models import ErrorResponse, ScanRequest, ScanResponse, VirusTotalResult
+    from virustotal import check_url as vt_check_url
 
 
 # ---------------------------------------------------------------------------
