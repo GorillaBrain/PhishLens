@@ -94,3 +94,5 @@ logs/
 *.tmp
 *.temp
 .vercel
+
+.vercel
